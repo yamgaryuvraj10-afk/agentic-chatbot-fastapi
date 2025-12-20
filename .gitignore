@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.venv/
+
+# Env files
+.env
+.env.*
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Cache / temp
+*.tmp
+*.temp
+
+# Streamlit
+.streamlit/
+
+# Local vector stores / uploads (if you create these later)
+data/
+storage/
+vectorstore/
+uploads/
+*.faiss
+*.pkl
