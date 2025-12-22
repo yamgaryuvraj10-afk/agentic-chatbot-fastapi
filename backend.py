@@ -198,7 +198,5 @@ def clear_session(session: UploadState):
             del _VECTORSTORES[session.session_id]
     gc.collect()
     return {"status": "ok", "message": "Session document cleared."}
-
 if __name__ == "__main__":
-    port=int(os.enviorn.get("PORT",9999))
-    uvicorn.run(app,host="0.0.0.0",port=port)
+    uvicorn.run(app, host="0.0.0.0")
