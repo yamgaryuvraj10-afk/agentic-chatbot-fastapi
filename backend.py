@@ -199,4 +199,6 @@ def clear_session(session: UploadState):
     gc.collect()
     return {"status": "ok", "message": "Session document cleared."}
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0")
+    port = int(os.environ.get("PORT", "10000"))
+    uvicorn.run(app, host="0.0.0.0", port=port)
+
